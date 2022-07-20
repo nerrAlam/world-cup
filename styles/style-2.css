@@ -178,6 +178,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 70px;
+    transform: translateY(75px);
 
 }
 hr{
