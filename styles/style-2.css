@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
 }
 body{
     background-color: #fff;
@@ -210,4 +211,147 @@ contact-link li{
 .contact-link li a:hover:after{
     width: 100%;
 
+}
+
+
+
+
+/* mobile responsive for headers section  */
+
+@media  screen and(max-width: 450px) {
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heading-information,.banner-picture{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heading-information{
+        margin-left: -25px;
+    }
+    .heading-information{
+        text-align: center;
+    }
+
+
+    .match-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .matches{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .match{
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .match-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .match-info .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+    hr{
+        margin: auto;
+        width: 90%;
+        margin-top: 22px;
+    }
+    .contact-link ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+    }
+    .contact-link li{
+        margin-bottom: 25px;
+    }
+    .contact-link li a:hover{
+        color: lime;
+    }
+    .tablet-button{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+/* media query tablet section  */
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    header{
+        width: 100%;
+        height: 500px
+    }
+    .match-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .link-option{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+    }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     footer hr{
+        margin-top: 80px;
+     }
+     .contact-link ul{
+    
+        margin: 60px auto;
+     }
+     .contact-link li a{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 25px;
+
+     }
 }
