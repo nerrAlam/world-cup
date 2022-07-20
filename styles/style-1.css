@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
 }
 body{
     background-color: #fff;
@@ -18,7 +19,9 @@ body{
     border-radius: 8px;
     font-size: 17px;
 }
-
+.fa-solid{
+    color: gray;
+}
 .link-style{
    
 }
@@ -52,19 +55,20 @@ header .heading-information{
     margin-left: 60px;
 }
 
-.heading-information span{
-    text-transform: uppercase;
-    color: #a7edc6;
-    display: inline-block;
-    margin-top: 9px;
+.heading-information h1{
+    font-size: 45px;
+    color: tomato;
+    font-weight: 800;
 }
+
 .heading-information p{
     font-size: 16px;
     margin-top: 7px;
+    font-weight: 200;
 }
 .heading-information .link-1{
     margin-top: 23px;
-    width: 150px;
+    width: 160px;
 }
 header .banner-picture img{
     width: 97%;
@@ -192,7 +196,7 @@ contact-link li{
 }
 
 .contact-list li a:after{
-    content: '';
+    content: "";
     position: absolute;
     background-color: rgb(172, 62, 62);
     width: 0;
@@ -202,11 +206,13 @@ contact-link li{
     transition: 0.3s;
 }
 
-.contact-link li a:hover:after{
+.contact-link li a:hover:.contact-list li a after{
     width: 100%;
 
 }
-
+.tablet-button{
+    display: none;
+}
 
 
 /* mobile responsive website  */
@@ -225,9 +231,13 @@ contact-link li{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .heading-information{
-        margin-left: -4%;
+        margin-left: -25px;
+    }
+    .heading-information{
+        text-align: center;
     }
     .blog-section{
         display: grid;
@@ -283,6 +293,9 @@ contact-link li{
     .contact-link li a:hover{
         color: lime;
     }
+    .tablet-button{
+        display: none;
+    }
 
 }
 
@@ -300,8 +313,43 @@ contact-link li{
         display: flex;
         flex-direction: row;
         width: 100%;
+        height: 50px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         border-radius: 10px;
     }
+    .link-option .link-style{
+        /* margin-left: -155px; */
+     }
+     .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .finish-blog{
+       display: none;
+     }
+     .tablet-button{
+        width: 25%;
+        background-color: red;
+        height: 45px;
+        border-radius: 8px;
+        display:block;
+        margin: 19px auto;
+        border: none;
+        outline: none;
+     }
+
+     footer hr{
+        margin-top: 80px;
+     }
+     .contact-link ul{
+    
+        margin: 60px auto;
+     }
+     .contact-link li a{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 25px;
+
+     }
 }
