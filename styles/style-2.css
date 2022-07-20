@@ -52,8 +52,10 @@ header .heading-information{
     margin-left: 60px;
 }
 
-.heading-information h3{
-    font-size: 18px;
+.heading-information h1{
+    font-size: 45px;
+    color: tomato;
+    font-weight: 800;
 }
 .heading-information p{
     font-size: 16px;
