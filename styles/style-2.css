@@ -1,4 +1,3 @@
-
 /* common styles */
 
 *{
@@ -71,9 +70,9 @@ header .banner-picture img{
 }
 /* head section end  */
 
-/* blogs section  */
+/* match section  */
 
-.blog-section{
+.match-section{
     width: 93%;
     display: grid;
     grid-template-columns: 210px 1fr;
@@ -81,6 +80,7 @@ header .banner-picture img{
     margin: 25px auto;
 
 }
+
 .link-option{
     display: flex;
     flex-direction: column;
@@ -114,42 +114,49 @@ header .banner-picture img{
     border: 2px solid darkblue;
     color: #fff;
 }
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    gap: 10px;
-}
 
-.blog{
-    border-radius: 10px;
-    background-color: #eeefe3;
+/* upcoming matches styles */
+
+.matches{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 15px;
+}
+.match{
     display: flex;
-    flex-direction: column; 
-}
-.blog:hover{
-    background-color: cyan;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #afbfb2;
+    border-radius: 10px;
 }
 
-.match-info button{
+.match:hover{
+    background-color:aqua;
+}
+
+.match .match-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match .info h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.match .info p{
     font-size: 16px;
-    background-color: lightgray;
-    color: #000;
-    padding: 5px 20px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-
+    font-weight: 300;
 }
-.match-info button:hover{
-    background-color: lime;
-    color: black;
-    border: 1px solid lime;
-}
-
-.icon-info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 9px;
-} 
 
 /* footer section styles */
 
