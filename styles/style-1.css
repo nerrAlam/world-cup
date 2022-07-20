@@ -71,6 +71,8 @@ header .banner-picture img{
 }
 /* head section end  */
 
+
+
 /* blogs section  */
 
 .blog-section{
@@ -203,4 +205,103 @@ contact-link li{
 .contact-link li a:hover:after{
     width: 100%;
 
+}
+
+
+
+/* mobile responsive website  */
+/* for mobile */
+@media only screen and (max-width: 450px){
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading-information,.banner-picture{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading-information{
+        margin-left: -4%;
+    }
+    .blog-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blogs{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .blog{
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .match-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .match-info .icon-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+    hr{
+        margin: auto;
+        width: 90%;
+        margin-top: 22px;
+    }
+    .contact-link ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+    }
+    .contact-link li{
+        margin-bottom: 25px;
+    }
+    .contact-link li a:hover{
+        color: lime;
+    }
+
+}
+
+/* media query tablet section  */
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
+    header{
+        width: 100%;
+        height: 500px
+    }
+    .blog-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .link-option{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
 }
