@@ -95,6 +95,8 @@ header .banner-picture img{
     height: 270px;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
 }
 
 .link-style{
@@ -217,13 +219,16 @@ contact-link li{
 
 /* mobile responsive website  */
 /* for mobile */
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 600px){
     header{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        justify-items: center;
+        transform: translateY(-120px); 
     }
     .heading-information,.banner-picture{
         width: 50%;
@@ -232,9 +237,14 @@ contact-link li{
         align-items: center;
         justify-content: center;
         text-align: center;
+        justify-items: center;
     }
     .heading-information{
-        margin-left: -25px;
+        transform: translateX(-32px);
+    }
+    .banner-picture img{
+        margin: auto;
+        width: 100%;
     }
     .heading-information{
         text-align: center;
@@ -300,7 +310,7 @@ contact-link li{
 }
 
 /* media query tablet section  */
-@media only screen and (min-width: 451px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     header{
         width: 100%;
         height: 500px
