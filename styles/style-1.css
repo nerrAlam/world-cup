@@ -71,7 +71,8 @@ header .banner-picture img{
 
 .blog-section{
     width: 93%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     margin: 25px auto;
 
 }
